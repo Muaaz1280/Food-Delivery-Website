@@ -1,107 +1,76 @@
 # 🍔 Food Delivery Website (MERN Stack Project)
 
+<details>
+<summary>Click to view full project details</summary>
+
+<br>
+
 This project uses the **MERN Stack**:
 
-- **MongoDB** – database (NoSQL)
-- **Express.js** – backend framework
-- **React.js** – frontend library
-- **Node.js** – server environment
+- **MongoDB** – database (NoSQL)  
+- **Express.js** – backend framework  
+- **React.js** – frontend library  
+- **Node.js** – server environment  
+
+---
 
 Also uses:
 
 - **Bootstrap** – for styling (e.g., dark background support)  
-  📌 Use the CDN link in `public/index.html`:
-  ```html
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-🧠 Project Structure Overview
-📁 Backend/
-Contains all server-side logic.
+📌 Use the CDN link in `public/index.html`:
 
-🔹 models/
-Orders.js: Defines schema for customer orders.
+```html
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
-User.js: Defines schema for users (like name, email, password).
+📁 Backend/ – Contains all server-side logic and APIs.
 
-🔹 Routes/
-CUser.js: User-related routes (login/signup).
+📌 Models
+models/Orders.js: Defines schema for customer orders.
 
-OrderData.js: For placing or viewing orders.
+models/User.js: Defines schema for users (name, email, password).
 
-DisplayData.js: Sends category and food data to frontend.
+📌 Routes
+Routes/CUser.js: Handles user-related routes (login/signup).
 
-🔹 Other backend files:
-Db.js: Handles MongoDB connection.
+Routes/OrderData.js: Manages placing and viewing of orders.
 
-index.js: Entry point for backend server.
+🚀 Features
+User Signup/Login
 
-package.json: Lists backend dependencies (express, mongoose, cors, etc.).
+Place Orders with Quantity and Option (like half/full)
 
-📁 Frontend (my-app/)
-📁 public/
-index.html: You added Bootstrap dark theme here.
+View Order Summary
 
-📁 src/
-Contains all React code.
+Bootstrap-based UI for clean layout
 
-🔹 components/
-Card.js: Displays food item cards.
+MongoDB for data storage
+Navigate to project directory:
 
-Carousal.js + Carousal.css: Bootstrap image carousel.
-
-ContextReducer.js: Manages global state like cart and orders.
-
-Footer.js, Navbar.js: Common layout components.
-
-images1/: Folder for food images.
-
-🔹 screens/
-Home.js: Landing page.
-
-Login.js, Signup.js: Authentication pages.
-
-Cart.js: Shopping cart.
-
-MyOrder.js: Displays user's past orders.
-
-🔹 Others
-App.js: Routing and layout logic.
-
-index.js: React entry point.
-
-Model.js: Optional helper file.
-
-foodData2.json, foodCategory.json: Static fallback data if backend is unavailable.
-
-🏃‍♂️ How to Run the Project on a New Device
-✅ 1. Prerequisites
-Node.js installed
-
-MongoDB connection string (Atlas or Local)
-
-✅ 2. Setup Backend
 bash
-Copy code
-cd Backend
+Copy
+Edit
+cd food-delivery-website
+Install server dependencies:
+
+bash
+Copy
+Edit
+cd backend
 npm install
-node index.js     # or nodemon index.js
-💡 Optional .env file:
+Start backend server:
 
-env
-Copy code
-MONGO_URL = mongodb+srv://your_url
-PORT = 5000
-✅ 3. Setup Frontend
 bash
-Copy code
-cd my-app
+Copy
+Edit
+node index.js
+For frontend:
+
+bash
+Copy
+Edit
+cd ../frontend
 npm install
 npm start
-App runs on: http://localhost:3000
-
-📝 Notes
-Bootstrap is added via CDN in public/index.html.
-
-React app uses fetch or axios to call backend APIs.
-
-cors middleware is enabled in backend for frontend communication.
+🙋 Author
+Developed by Muazz1280
 
