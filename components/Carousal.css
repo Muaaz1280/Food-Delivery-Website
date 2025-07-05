@@ -1,0 +1,124 @@
+.carousel-slide {
+  position: relative;
+}
+
+.carousel-slide .carousel-item {
+  height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.carousel-img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.carousel-img-wrapper img {
+  max-height: 85%;
+  max-width: 100%;
+  object-fit: contain;
+  margin: auto;
+}
+
+.carousel-search {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+  width: 90%;
+  max-width: 700px;
+  display: flex;
+  gap: 10px;
+  padding: 0 10px;
+}
+
+.carousel-search input {
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+}
+
+.carousel-search button {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+.carousel-caption-custom {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px 15px;
+  margin-top: 10px;
+}
+
+.caption-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.caption-desc {
+  font-size: 1.1rem;
+  color: #fff;
+  margin: 5px 0 0;
+}
+
+.yellow-text {
+  color: #ffd700;
+}
+
+.cyan-text {
+  color: #00ffff;
+}
+
+.red-text {
+  color: #ff6347;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-size: 100% 100%;
+}
+
+.carousel-control-prev-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M4.5 0L3.08 1.41 5.67 4 3.08 6.59 4.5 8l4-4-4-4z' transform='rotate(180 4 4)'/%3e%3c/svg%3e");
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3e%3cpath d='M2.5 0L1.08 1.41 3.67 4 1.08 6.59 2.5 8l4-4-4-4z'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 768px) {
+  .carousel-slide .carousel-item {
+    height: 400px;
+  }
+
+  .caption-title {
+    font-size: 1.5rem;
+  }
+
+  .caption-desc {
+    font-size: 1rem;
+  }
+
+  .carousel-search {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .carousel-search input,
+  .carousel-search button {
+    width: 100%;
+  }
+}
