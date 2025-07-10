@@ -1,3 +1,12 @@
+
+
+
+
+
+https://github.com/user-attachments/assets/97a8d674-a8c1-4841-a4a7-148b037a24d7
+
+
+
 # 🍔 Food Delivery Website – MERN Stack Project
 
 This is a **full-stack web application** for ordering food online, built with the **MERN stack**.
@@ -72,8 +81,15 @@ Copy
 Edit
 http://localhost:3000
 🌐 Bootstrap CDN
+
+
+
+
 Make sure to include the Bootstrap CSS link inside <head> in public/index.html:
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 Feel free to fork this repository, open issues, or submit pull requests.
 if want working  project you can contact me at muaaz1280@gmail.com
+
+
+
 
